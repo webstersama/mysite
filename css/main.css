@@ -60,6 +60,89 @@ button {
 	color: white !important;
 }
 
+.modal { 
+    position: fixed; 
+    top: 3%; 
+    right: 3%; 
+    left: 3%; 
+    width: auto; 
+    margin: 0; 
+}
+
+.modal-body { 
+    padding: 0 20px !important;
+}
+
+.modal .d-flex button {
+	margin-bottom: 20px;
+}
+
+#modal-details .modal-header h4 {
+	letter-spacing: 1px;
+}
+
+#modal-details .modal-content { 
+   background-color: transparent;
+	opacity: 0.9;
+}
+
+#modal-details .modal-body  { 
+    padding: 0 0 3px 0 !important;
+}
+
+#modal-details .modal-content { 
+    padding: 0;
+}
+
+#modal-details .card {
+	border-radius: 0;
+	background-color: #FFFFFF;
+}
+
+#modal-details .card-header {
+	background-color: #00000000;
+	letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+#modal-details h5 {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+#modal-details .card-header:hover {
+  background-color: #ffbb33 !important;
+	color: white  !important;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+#modal-details .card-body {
+	-webkit-box-shadow: inset 0px -11px 5px -7px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0px -11px 5px -7px rgba(0,0,0,0.25);
+  box-shadow: inset 0px -11px 5px -7px rgba(0,0,0,0.25);
+}
+
+.close {
+	color: black !important;
+	font-size: 1em !important;
+	height: 15px;
+	width: 20px;
+	padding: 1px 0 0 0 !important;
+}
+.modal-content {
+	padding-bottom: 12px;
+}
+
+.modal-header {
+	background-color: #7a28a3;
+	color: white;
+}
+
+#modal-details .close {
+	color: white !important;
+}
+
 .btn-secondary:hover {
 	background-color: #7a28a3 !important;
 	transition: 0.3s;
@@ -91,7 +174,7 @@ canvas {
 	display: -ms-flexbox;
 	display: flex;
 	overflow: hidden;
-	height: 680px;
+	height: 768px;
 	background-color: white !important;
 	letter-spacing: 2px;
 	margin-bottom: 20px;
@@ -251,32 +334,6 @@ header h1 {
 header p {
 	color: #616161;
 }
-
-.modal { 
-    position: fixed; 
-    top: 3%; 
-    right: 3%; 
-    left: 3%; 
-    width: auto; 
-    margin: 0; 
-}
-
-.modal .d-flex button {
-	margin-bottom: 20px;
-}
-
-.modal-body { 
-    height: 60%;
-    padding: 0 20px !important;
-}
-
-.close {
-	color: black !important;
-	font-size: 1em !important;
-	height: 15px;
-	width: 20px;
-}
-
 
 #jumbotron_text {
 	padding-top: 40px;
@@ -511,6 +568,18 @@ svg:hover {
 }
 
 @media (max-width: 780px) {
+	#modal-details h4 {
+		font-size: 18px;
+	}
+	
+	#modal-details i {
+		margin-right: 10px !important;
+	}
+	
+	#modal-details h5 {
+  	font-size: 15px !important;
+  }
+	
 	.grad-block h2 {
 		font-size: 30px !important;
 	}

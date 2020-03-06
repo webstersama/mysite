@@ -30,9 +30,9 @@
 			<!-- Меню сайта -->
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="nav navbar-nav" >
-					<li class="nav-item active"><a class="nav-link" href="#">Услуги</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Портфолио</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Стоимость</a></li>
+					<li class="nav-item active"><a class="nav-link" href="#my_skills">Услуги</a></li>
+					<li class="nav-item"><a class="nav-link" href="#examples">Портфолио</a></li>
+					<li class="nav-item"><a class="nav-link" href="#price">Стоимость</a></li>
 				</ul>
 			</div>
 			<span class="navbar-brand mx-auto">{webster-studio}</span>
@@ -52,7 +52,7 @@
 					<div class="header-info_text"> 
 						<h1 class="h1-responsive">Олег Кустаров</h1>
 						<p class="">Frontend-разработчик и веб-верстальщик</p>
-						<button type="button" class="btn btn-secondary">Узнать больше <i class="fas fa-angle-double-right"></i></button>
+						<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-details">Узнать больше <i class="fas fa-angle-double-right"></i></button>
 						<p></p>
 					</div>
 					</div>
@@ -66,12 +66,12 @@
 	<div class="container bottom-info text-center">
 		<h1 class="">Олег Кустаров</h1>
 		<p class="text-muted">Frontend-разработчик и веб-верстальщик</p>
-		<button type="button" class="btn btn-secondary">Узнать больше <i class="fas fa-angle-double-right"></i></button>
+		<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-details">Узнать больше <i class="fas fa-angle-double-right"></i></button>
 	</div>
 	<!-- Главный блок -->
 	<main id="top">
 		<!-- Блок навыков -->
-		<div class="container-fluid jumbotron">
+		<div id="my_skills" class="container-fluid jumbotron">
 			<div class="container text-center">		
 				<h2>Что я делаю</h2>
 				<div class="row align-items-center justify-content-center" id="skills">
@@ -154,7 +154,7 @@
 			</div>
 		</div>	
 		<!-- Блок с анимированным градиентом. -->
-		<div class="container-fluid jumbotron grad-block">
+		<div id="price" class="container-fluid jumbotron grad-block">
 			<div class="jumbotron_decor">
 				<span>{}</span>
 				<span>&lt;/&gt;</span>
@@ -186,7 +186,7 @@
 								</ul>
 						</div>
 						<hr class="clearfix w-100 d-md-none">
-						<div class="col-md-3 mx-auto">
+						<div class="col-md-5 col-xs-3 mx-auto">
 							<ul class="list-unstyled" id="footer_center">
 								<li>
 									<a href="tel:+79990000000"><h5><i class="fas fa-phone-volume"></i> +7(999)000-00-00</h5></a>
@@ -243,11 +243,112 @@
 		</div>
 	</div>
 </div>
+<div class="modal fade" id="modal-details" tabindex="-1" role="dialog" aria-hidden="true" >
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header text-center">
+		        <h4 class="h4-responsive modal-title w-100" id="myModalLabel ">4 моих главных аргумента:</h4>
+				<button type="button" class="clearfix close" data-dismiss="modal" aria-label="Close">
+					<i class="fas fa-window-close"></i>
+				</button>
+		      </div>
+			<div class="float-right">
+
+			</div>
+			<div class="modal-body">
+				<div class="accordion overflow-auto" id="accordion">
+				  <div class="card z-depth-0">
+				    <div class="card-header" id="headingOne2" data-toggle="collapse" data-target="#collapseOne2"
+				          aria-expanded="true" aria-controls="collapseOne2">
+				      <h5>
+				          <div class="md-v-line"></div>Яркий&nbsp;запоминающийся&nbsp;дизайн
+				      </h5>
+				    </div>
+				    <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2"
+				      data-parent="#accordion">
+				      <div class="card-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+				        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+				        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+				        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+				        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+				        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+				        labore sustainable.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card z-depth-0">
+				    <div class="card-header" id="headingTwo2" data-toggle="collapse"
+				          data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+				      <h5>
+				          <div class="md-v-line"></div>Современный&nbsp;подход
+				      </h5>
+				    </div>
+				    <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2"
+				      data-parent="#accordion">
+				      <div class="card-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+				        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+				        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+				        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+				        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+				        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+				        labore sustainable.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card z-depth-0">
+				    <div class="card-header" id="headingThree2" data-toggle="collapse"
+				          data-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+				      <h5>
+				          <div class="md-v-line"></div>Высокий&nbsp;уровень&nbsp;адаптивности
+				      </h5>
+				    </div>
+				    <div id="collapseThree2" class="collapse" aria-labelledby="headingThree2"
+				      data-parent="#accordion">
+				      <div class="card-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+				        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+				        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+				        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+				        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+				        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+				        labore sustainable.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card z-depth-0">
+				    <div class="card-header" id="headingFour2" data-toggle="collapse"
+				          data-target="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
+				      <h5>
+				          <div class="md-v-line"></div>Кратчайшие&nbsp;сроки
+				      </h5>
+				    </div>
+				    <div id="collapseFour2" class="collapse" aria-labelledby="headingFour2"
+				      data-parent="#accordion">
+				      <div class="card-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+				        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+				        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+				        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+				        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+				        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+				        labore sustainable.
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 	<!-- JS files -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/canvas.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/accordion.js"></script>
+	<script src="js/decor.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/mdb.min.js"></script>
 </body>
